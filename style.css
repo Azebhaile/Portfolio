@@ -3,6 +3,11 @@
 body{
     background: #e7e1de;
 }
+/* .footer{
+  position: fixed;  
+  width: 100%;
+  left: 0%;
+} */
 *{
     margin: 0;
     padding: 0;
@@ -59,12 +64,13 @@ span{
     border-radius: 5px;
 }
 .profile img{
-    width: 30%;
+    width: 25%;
     height: auto;
     position: absolute;
     bottom: 40px;
-    right: 40px;
-    border-radius: 10%;  /*no change??*/
+    right: 80px;
+    border-radius: 10%; /*no change??*/
+    padding-right: 20pxl.llLLZXlallllla;
 }
 
 /***   ABOUT HTML   ***/
@@ -90,7 +96,8 @@ span{
     height: auto;
     float: left;
     padding: 200px;
-    justify-content: space-between;
+    font-size: 21px;}
+    /* justify-content: space-between; */
 
     
 /* footer{
@@ -99,24 +106,107 @@ span{
 
 
 /***   PORTFOLIO HTML   ***/
-.portolio-img img{
-    width: 50px;
+
+#portfolio-main{
+    margin: 30px;
+    width: 100%;
+    display: block;
+   
+  
+}
+.work-experience{
+    width: 30%;
+    padding: 30px;
+}
+.work-experience h1{
+    padding-bottom: 20px;
+
+}
+.work-experience h3{
+    padding-bottom: 20px;
+}
+.work-experience P{
+    padding-bottom: 10px;
+}
+.portfolio-profile{
+    padding-bottom: 30px;
+    width: 30%;
+    float:right;
+
+}
+.portfolio-profile img{
+    width: 50%;
+    height:auto;
+    float:right;
+    margin-right: 30px;
+    padding-right: 70px;
+    padding-bottom: 30px;
+    
+}
+.technicalskill-text{
+    width: 30%;
     height: auto;
-    padding: 100px;
-    float: right;
+    /* padding: 50px; */
+    /* position: absolute; */
+    right: 0;
+    /* float: left; */
+    margin-left: 400px;
+    float:right;
+    margin-top: -4px;
+}
+.technicalskill-text h1{
+    padding-bottom: 20px;
+
+}
+.technicalskill-text ul li{
+    padding-bottom: 10px;
+
+}
+.technicalskill-text h2{
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+#work-skill{
+    display: flex;
 }
 
 
-
-
 /***   CONTACT HTML   ***/
-.container{
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+/* .container{
     width: 100%; 
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px; 
     box-sizing: border-box; 
     margin-top: 6px;
-    margin: bottom: 16px;
+    margin: bottom 16px;
+} */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    bottom: 0;
 }
-
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.container {
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */
+    padding-left: 200px;
+    padding-right: 200px;
+    margin: 30px;
+  }
